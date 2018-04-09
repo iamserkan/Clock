@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B3D6E40E207BA72700D482AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6E40D207BA72700D482AE /* AppDelegate.swift */; };
-		B3D6E410207BA72700D482AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6E40F207BA72700D482AE /* ViewController.swift */; };
 		B3D6E413207BA72700D482AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D6E411207BA72700D482AE /* Main.storyboard */; };
 		B3D6E415207BA72700D482AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D6E414207BA72700D482AE /* Assets.xcassets */; };
 		B3D6E418207BA72700D482AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D6E416207BA72700D482AE /* LaunchScreen.storyboard */; };
+		B3D6E420207BABF000D482AE /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6E41F207BABF000D482AE /* TimeTableViewCell.swift */; };
+		B3D6E422207BAC4B00D482AE /* LapsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6E421207BAC4B00D482AE /* LapsTableViewCell.swift */; };
+		B3D6E424207BAEFC00D482AE /* StopwatchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6E423207BAEFC00D482AE /* StopwatchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3D6E40A207BA72700D482AE /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D6E40D207BA72700D482AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3D6E40F207BA72700D482AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3D6E412207BA72700D482AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3D6E414207BA72700D482AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3D6E417207BA72700D482AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3D6E419207BA72700D482AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3D6E41F207BABF000D482AE /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		B3D6E421207BAC4B00D482AE /* LapsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapsTableViewCell.swift; sourceTree = "<group>"; };
+		B3D6E423207BAEFC00D482AE /* StopwatchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				B3D6E40D207BA72700D482AE /* AppDelegate.swift */,
-				B3D6E40F207BA72700D482AE /* ViewController.swift */,
 				B3D6E411207BA72700D482AE /* Main.storyboard */,
+				B3D6E423207BAEFC00D482AE /* StopwatchTableViewController.swift */,
+				B3D6E41F207BABF000D482AE /* TimeTableViewCell.swift */,
+				B3D6E421207BAC4B00D482AE /* LapsTableViewCell.swift */,
 				B3D6E414207BA72700D482AE /* Assets.xcassets */,
 				B3D6E416207BA72700D482AE /* LaunchScreen.storyboard */,
 				B3D6E419207BA72700D482AE /* Info.plist */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D6E410207BA72700D482AE /* ViewController.swift in Sources */,
+				B3D6E422207BAC4B00D482AE /* LapsTableViewCell.swift in Sources */,
+				B3D6E424207BAEFC00D482AE /* StopwatchTableViewController.swift in Sources */,
 				B3D6E40E207BA72700D482AE /* AppDelegate.swift in Sources */,
+				B3D6E420207BABF000D482AE /* TimeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.serkanozdemir.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.serkanozdemir.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
